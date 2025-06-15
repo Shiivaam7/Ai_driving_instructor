@@ -4,77 +4,302 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Driving Instructor</title>
+  <title>AI Driving Instructor - Your Smart Driving Companion</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .hero-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+    .feature-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+  </style>
 </head>
 
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg fixed w-full z-50">
+    <div class="container mx-auto px-6 py-3">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center">
+          <i class="fas fa-car-side text-blue-600 text-2xl mr-2"></i>
+          <span class="font-bold text-xl">AI Driving</span>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#features" class="hover:text-blue-600 transition">Features</a>
+          <a href="#how-it-works" class="hover:text-blue-600 transition">How It Works</a>
+          <a href="#testimonials" class="hover:text-blue-600 transition">Testimonials</a>
+          <a href="#pricing" class="hover:text-blue-600 transition">Pricing</a>
+        </div>
+        <a href="#get-started" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
   <!-- Hero Section -->
-  <section class="bg-white py-20 shadow-md">
+  <section class="hero-gradient text-white pt-32 pb-20">
     <div class="container mx-auto text-center px-6">
-      <h1 class="text-4xl font-bold mb-4">AI Driving Instructor</h1>
-      <p class="text-lg mb-6">Learn driving safely with AI by your side.</p>
-      <a href="#features" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Know More</a>
+      <h1 class="text-5xl font-bold mb-6">Master Driving with AI Technology</h1>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">Experience the future of driving education with our AI-powered instructor. Safe, smart, and personalized learning at your fingertips.</p>
+      <div class="flex justify-center space-x-4">
+        <a href="#features" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Explore Features</a>
+        <a href="#demo" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition">Watch Demo</a>
+      </div>
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white/10 backdrop-blur-lg p-8 rounded-xl border border-white/20 hover:bg-white/20 transition duration-300">
+          <div class="text-4xl mb-4"><i class="fas fa-road"></i></div>
+          <h3 class="text-2xl font-semibold mb-3">Real Traffic Scenarios</h3>
+          <p class="text-white/80">Practice with AI-generated scenarios based on real Indian traffic conditions.</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur-lg p-8 rounded-xl border border-white/20 hover:bg-white/20 transition duration-300">
+          <div class="text-4xl mb-4"><i class="fas fa-brain"></i></div>
+          <h3 class="text-2xl font-semibold mb-3">Smart Learning</h3>
+          <p class="text-white/80">Adaptive learning system that evolves with your progress.</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur-lg p-8 rounded-xl border border-white/20 hover:bg-white/20 transition duration-300">
+          <div class="text-4xl mb-4"><i class="fas fa-mobile-alt"></i></div>
+          <h3 class="text-2xl font-semibold mb-3">Mobile Ready</h3>
+          <p class="text-white/80">Learn on any device, anytime, anywhere with our responsive platform.</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur-lg p-8 rounded-xl border border-white/20 hover:bg-white/20 transition duration-300">
+          <div class="text-4xl mb-4"><i class="fas fa-certificate"></i></div>
+          <h3 class="text-2xl font-semibold mb-3">Certification Ready</h3>
+          <p class="text-white/80">Prepare for your driving test with our comprehensive training modules.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Features Section -->
-  <section id="features" class="py-16">
+  <section id="features" class="py-20">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">Key Features</h2>
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Revolutionary Features</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Experience cutting-edge AI technology that transforms how you learn to drive</p>
+      </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold mb-2">Chatbot Rulebook</h3>
-          <p>Ask any driving rule and get AI-based responses in seconds.</p>
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 feature-card">
+          <div class="text-blue-600 text-4xl mb-4">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">AI Chatbot Rulebook</h3>
+          <p class="text-gray-600">Get instant answers to any driving rule question with our advanced AI system. Available 24/7.</p>
         </div>
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold mb-2">Simulation Feedback</h3>
-          <p>Choose a driving scenario and let the AI evaluate your actions.</p>
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 feature-card">
+          <div class="text-blue-600 text-4xl mb-4">
+            <i class="fas fa-vr-cardboard"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">3D Simulation</h3>
+          <p class="text-gray-600">Practice in realistic 3D environments with real-time AI feedback on your driving decisions.</p>
         </div>
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold mb-2">Voice Instructions</h3>
-          <p>Real-time voice guidance just like a real instructor.</p>
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 feature-card">
+          <div class="text-blue-600 text-4xl mb-4">
+            <i class="fas fa-microphone-alt"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Voice Assistant</h3>
+          <p class="text-gray-600">Natural voice guidance that adapts to your learning style and progress.</p>
         </div>
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold mb-2">India-Focused</h3>
-          <p>Designed with Indian traffic rules and driving conditions in mind.</p>
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 feature-card">
+          <div class="text-blue-600 text-4xl mb-4">
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Local Expertise</h3>
+          <p class="text-gray-600">Specialized content for Indian traffic rules, road conditions, and driving culture.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- How It Works -->
-  <section class="bg-white py-16">
+  <section id="how-it-works" class="bg-white py-20">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-        <div>
-          <div class="text-4xl mb-4">1️⃣</div>
-          <h4 class="font-semibold text-lg">Select Mode</h4>
-          <p>Choose between theory, simulation, or voice-guided learning.</p>
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Simple Learning Journey</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Start your driving journey in three easy steps</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+        <div class="relative z-10 bg-white p-8 rounded-xl shadow-lg text-center">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-2xl mx-auto mb-6">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h4 class="font-semibold text-xl mb-4">1. Choose Your Path</h4>
+          <p class="text-gray-600">Select from personalized learning modes: Theory, Virtual Practice, or Live Guidance.</p>
         </div>
-        <div>
-          <div class="text-4xl mb-4">2️⃣</div>
-          <h4 class="font-semibold text-lg">Interact</h4>
-          <p>Ask questions, make driving decisions, and get evaluated.</p>
+        <div class="relative z-10 bg-white p-8 rounded-xl shadow-lg text-center">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-2xl mx-auto mb-6">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <h4 class="font-semibold text-xl mb-4">2. Interactive Learning</h4>
+          <p class="text-gray-600">Engage with AI scenarios, get instant feedback, and master driving skills step by step.</p>
         </div>
-        <div>
-          <div class="text-4xl mb-4">3️⃣</div>
-          <h4 class="font-semibold text-lg">Improve</h4>
-          <p>Get real-time feedback and track your driving learning progress.</p>
+        <div class="relative z-10 bg-white p-8 rounded-xl shadow-lg text-center">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-2xl mx-auto mb-6">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h4 class="font-semibold text-xl mb-4">3. Track Progress</h4>
+          <p class="text-gray-600">Monitor your improvement with detailed analytics and personalized recommendations.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact / CTA -->
-  <section class="py-12 bg-blue-600 text-white text-center">
-    <h2 class="text-3xl font-bold mb-4">Ready to Start Your Smart Driving Journey?</h2>
-    <a href="#" class="bg-white text-blue-600 px-6 py-2 mt-4 rounded inline-block font-semibold hover:bg-gray-200">Try Demo</a>
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">What Learners Say</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Join thousands of satisfied learners who mastered driving with our AI instructor</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <div class="text-yellow-400 mb-4">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="text-gray-600 mb-6">"The AI instructor made learning to drive so much easier. The instant feedback helped me correct my mistakes quickly."</p>
+          <div class="flex items-center">
+            <img src="https://placehold.co/60x60" alt="User" class="rounded-full mr-4">
+            <div>
+              <h4 class="font-semibold">Priya Sharma</h4>
+              <p class="text-gray-500">New Driver</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <div class="text-yellow-400 mb-4">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="text-gray-600 mb-6">"The 3D simulations helped me practice difficult scenarios without any risk. Excellent learning tool!"</p>
+          <div class="flex items-center">
+            <img src="https://placehold.co/60x60" alt="User" class="rounded-full mr-4">
+            <div>
+              <h4 class="font-semibold">Rahul Verma</h4>
+              <p class="text-gray-500">Student</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <div class="text-yellow-400 mb-4">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="text-gray-600 mb-6">"Voice guidance in my language made learning comfortable. The AI understood my needs perfectly."</p>
+          <div class="flex items-center">
+            <img src="https://placehold.co/60x60" alt="User" class="rounded-full mr-4">
+            <div>
+              <h4 class="font-semibold">Amit Patel</h4>
+              <p class="text-gray-500">Business Owner</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer class="py-6 text-center text-sm text-gray-600">
-    &copy; 2025 AI Driving Instructor Project | Developed by Shivam Kumar
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Choose Your Plan</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Flexible pricing options to suit your learning needs</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+          <h3 class="text-2xl font-bold mb-4">Basic</h3>
+          <div class="text-4xl font-bold mb-6">₹999<span class="text-lg text-gray-600">/month</span></div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Basic Theory Lessons</li>
+            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Limited Simulations</li>
+            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Chat Support</li>
+          </ul>
+          <a href="#" class="block text-center bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Get Started</a>
+        </div>
+        <div class="bg-blue-600 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform scale-105">
+          <h3 class="text-2xl font-bold mb-4 text-white">Pro</h3>
+          <div class="text-4xl font-bold mb-6 text-white">₹1999<span class="text-lg text-blue-200">/month</span></div>
+          <ul class="space-y-3 mb-8 text-white">
+            <li class="flex items-center"><i class="fas fa-check text-green-300 mr-2"></i>Advanced Theory Lessons</li>
+            <li class="flex items-center"><i class="fas fa-check text-green-300 mr-2"></i>Unlimited Simulations</li>
+            <li class="flex items-center"><i class="fas fa-check text-green-300 mr-2"></i>Voice Guidance</li>
+            <li class="flex items-center"><i class="fas fa-check text-green-300 mr-2"></i>Priority Support</li>
+          </ul>
+          <a href="#" class="block text-center bg-white text-blue-600 px-6 py-3 rounded-full hover:bg-gray-100 transition">Get Started</a>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+          <h3 class="text-2xl font-bold mb-4">Enterprise</h3>
+          <div class="text-4xl font-bold mb-6">Custom</div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Custom Learning Plans</li>
+            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Advanced Analytics</li>
+            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>24/7 Support</li>
+            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Dedicated Manager</li>
+          </ul>
+          <a href="#" class="block text-center bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="get-started" class="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-8">Start Your Journey Today</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">Join thousands of learners who have mastered driving with our AI instructor</p>
+      <div class="flex justify-center space-x-4">
+        <a href="#demo" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Watch Demo</a>
+        <a href="#pricing" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition">View Plans</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center mb-4">
+            <i class="fas fa-car-side text-blue-400 text-2xl mr-2"></i>
+            <span class="font-bold text-xl">AI Driving</span>
+          </div>
+          <p class="text-gray-400">Revolutionizing driving education with AI technology</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#features" class="hover:text-white transition">Features</a></li>
+            <li><a href="#how-it-works" class="hover:text-white transition">How It Works</a></li>
+            <li><a href="#pricing" class="hover:text-white transition">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><i class="fas fa-envelope mr-2"></i>support@aidriving.com</li>
+            <li><i class="fas fa-phone mr-2"></i>+91 123 456 7890</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 AI Driving Instructor | Developed by Shivam Kumar | All rights reserved</p>
+      </div>
+    </div>
   </footer>
 </body>
 
