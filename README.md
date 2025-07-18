@@ -1,11 +1,10 @@
-
-## 🎯 Project Objective
+ Project Objective
 
 To design a smart, beginner-friendly interface that acts like a **virtual driving instructor**, helping users understand basic driving rules, road signs, and safe driving tips. This is a prototype with a future goal to integrate machine learning or sensor-based interactivity.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **HTML5**
 - **CSS3**
@@ -32,16 +31,16 @@ Deployed using GitHub Pages.
 
 ---
 
-## 📌 Features
+##  Features
 
-- 🚦 Intro to traffic rules and signals
-- 🧠 Informational sections for safe driving
-- 🎯 Clean UI built with basic HTML and CSS
-- 🧩 Ready to scale for future AI enhancements (voice, object detection, etc.)
+-  Intro to traffic rules and signals
+-  Informational sections for safe driving
+-  Clean UI built with basic HTML and CSS
+-  Ready to scale for future AI enhancements (voice, object detection, etc.)
 
 ---
 
-## 🚀 Future Scope
+##  Future Scope
 
 - Integrate AI to:
   - Recognize hand signals, road signs via webcam
@@ -52,7 +51,7 @@ Deployed using GitHub Pages.
 
 ---
 
-## 🤝 Contributions
+##  Contributions
 
 This project was created as part of a **college micro project**. Contributions are welcome for expanding this concept further!
 
